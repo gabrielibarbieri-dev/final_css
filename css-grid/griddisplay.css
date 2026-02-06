@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho" "lateral conteudo" "rodape rodape ";
+    grid-template-columns: 30px 30px 30p;
+    grid-template-rows: 30px 30px 30px;
+    gap: 20px 50px;
+    justify-items: center;
+    /* stretch: estica os itens horizontalmente para preencher a célula 
+    start inicia da esquerda
+    end inicia da direita
+    center centraliza tudo
+    justify-item alinha cada item dentro da sua propria area, já o 
+    justify-content alinha horizontalmente as areas em relação ao container*/
+    align-items: center;
+    
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    border: solid;
+}
+
+.lateral {
+    grid-area: lsteral;
+    border: solid;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    border: solid;
+}
+
+.rodape {
+    grid-area: rodape;
+    border: solid;
+}
